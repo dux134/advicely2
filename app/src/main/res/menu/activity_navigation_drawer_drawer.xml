@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group >
+        <item
+            android:id="@+id/change_course"
+            android:icon="@drawable/changecourse"
+            android:title="Change Course" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/share"
+                android:title="Share" />
+        </menu>
+    </item>
+
+    <item android:title="Others">
+        <menu>
+            <item
+                android:id="@+id/about_us"
+                android:icon="@drawable/aboutus"
+                android:title="About Us" />
+            <item
+                android:id="@+id/Feedback"
+                android:icon="@drawable/feedback"
+                android:title="FeedBack" />
+        </menu>
+    </item>
+
+</menu>

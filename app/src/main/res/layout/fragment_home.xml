@@ -1,0 +1,431 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="848dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                custom:auto_cycle="true"
+                custom:indicator_visibility="visible"
+                custom:layout_constraintEnd_toEndOf="parent"
+                custom:layout_constraintHorizontal_bias="1.0"
+                custom:layout_constraintStart_toStartOf="parent"
+                custom:layout_constraintTop_toTopOf="parent"
+                custom:pager_animation="Accordion"
+                custom:pager_animation_span="1100">
+
+            </com.daimajia.slider.library.SliderLayout>
+
+            <com.daimajia.slider.library.Indicators.PagerIndicator
+                android:id="@+id/custom_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                custom:layout_constraintBottom_toBottomOf="parent"
+                custom:layout_constraintLeft_toLeftOf="parent"
+                custom:layout_constraintRight_toRightOf="parent"
+                custom:selected_color="#0095BF"
+                custom:selected_drawable="@drawable/icon1"
+                custom:selected_height="6dp"
+                custom:selected_padding_left="5dp"
+                custom:selected_padding_right="5dp"
+                custom:selected_width="6dp"
+                custom:shape="oval"
+                custom:unselected_color="#55333333"
+                custom:unselected_height="6dp"
+                custom:unselected_padding_left="5dp"
+                custom:unselected_padding_right="5dp"
+                custom:unselected_width="6dp" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                custom:layout_constraintEnd_toEndOf="parent"
+                custom:layout_constraintHorizontal_bias="0.497"
+                custom:layout_constraintStart_toStartOf="parent"
+                custom:layout_constraintTop_toTopOf="parent">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/admitcard"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        custom:layout_constraintEnd_toStartOf="@+id/fillform"
+                        custom:layout_constraintStart_toEndOf="@+id/ccsu"
+                        custom:layout_constraintTop_toBottomOf="@+id/textView3"
+                        custom:srcCompat="@mipmap/admitcard" />
+                    TextView
+
+                    <TextView
+                        android:id="@+id/admitcardtextView"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginTop="4dp"
+                        android:text="Admit Card"
+                        android:textSize="10sp"
+                        custom:layout_constraintBottom_toBottomOf="parent"
+                        custom:layout_constraintEnd_toEndOf="@+id/admitcard"
+                        custom:layout_constraintStart_toStartOf="@+id/admitcard"
+                        custom:layout_constraintTop_toBottomOf="@+id/admitcard" />
+
+                    <ImageView
+                        android:id="@+id/sarkariResult"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        custom:layout_constraintEnd_toEndOf="parent"
+                        custom:layout_constraintStart_toEndOf="@+id/resulttextView"
+                        custom:layout_constraintTop_toBottomOf="@+id/textView3"
+                        custom:srcCompat="@mipmap/sarkariresult" />
+
+                    <TextView
+                        android:id="@+id/sarkariresulttextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="4dp"
+                        android:text="Sarkari Result"
+                        android:textSize="10sp"
+                        custom:layout_constraintBottom_toBottomOf="parent"
+                        custom:layout_constraintEnd_toEndOf="@+id/sarkariResult"
+                        custom:layout_constraintStart_toStartOf="@+id/sarkariResult"
+                        custom:layout_constraintTop_toBottomOf="@+id/sarkariResult" />
+
+                    <ImageView
+                        android:id="@+id/result"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        custom:layout_constraintEnd_toStartOf="@+id/sarkariResult"
+                        custom:layout_constraintStart_toEndOf="@+id/fillform"
+                        custom:layout_constraintTop_toBottomOf="@+id/textView3"
+                        custom:srcCompat="@mipmap/resultm" />
+
+                    <TextView
+                        android:id="@+id/resulttextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="4dp"
+                        android:text="ccsu Result"
+                        android:textSize="10sp"
+                        custom:layout_constraintBottom_toBottomOf="parent"
+                        custom:layout_constraintEnd_toEndOf="@+id/result"
+                        custom:layout_constraintStart_toStartOf="@+id/result"
+                        custom:layout_constraintTop_toBottomOf="@+id/result" />
+
+                    <ImageView
+                        android:id="@+id/fillform"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        custom:layout_constraintEnd_toStartOf="@+id/result"
+                        custom:layout_constraintStart_toEndOf="@+id/admitcard"
+                        custom:layout_constraintTop_toBottomOf="@+id/textView3"
+                        custom:srcCompat="@mipmap/fillform" />
+
+                    <TextView
+                        android:id="@+id/fillformtextView"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="4dp"
+                        android:text="Web Portal"
+                        android:textSize="10sp"
+                        custom:layout_constraintBottom_toBottomOf="parent"
+                        custom:layout_constraintEnd_toEndOf="@+id/fillform"
+                        custom:layout_constraintStart_toStartOf="@+id/fillform"
+                        custom:layout_constraintTop_toBottomOf="@+id/fillform" />
+
+                    <ImageView
+                        android:id="@+id/ccsu"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        custom:layout_constraintEnd_toStartOf="@+id/admitcard"
+                        custom:layout_constraintStart_toStartOf="parent"
+                        custom:layout_constraintTop_toBottomOf="@+id/textView3"
+                        custom:srcCompat="@mipmap/ccs" />
+
+                    <TextView
+                        android:id="@+id/ccsutextView"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="4dp"
+                        android:text="Main Website"
+                        android:textSize="10sp"
+                        custom:layout_constraintBottom_toBottomOf="parent"
+                        custom:layout_constraintEnd_toEndOf="@+id/ccsu"
+                        custom:layout_constraintStart_toStartOf="@+id/ccsu"
+                        custom:layout_constraintTop_toBottomOf="@+id/ccsu" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="8dp"
+                        android:text="Quick Access"
+                        custom:layout_constraintEnd_toEndOf="parent"
+                        custom:layout_constraintHorizontal_bias="0.512"
+                        custom:layout_constraintLeft_toLeftOf="parent"
+                        custom:layout_constraintRight_toRightOf="parent"
+                        custom:layout_constraintStart_toStartOf="parent"
+                        custom:layout_constraintTop_toTopOf="parent" />
+
+                </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/ssc_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                custom:layout_constraintEnd_toEndOf="parent"
+                custom:layout_constraintStart_toStartOf="parent"
+                custom:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                <ImageView
+                    android:id="@+id/ssc_image"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    custom:layout_constraintBottom_toTopOf="@+id/ssc_recyclerView"
+                    custom:layout_constraintLeft_toLeftOf="parent"
+                    custom:layout_constraintStart_toStartOf="parent"
+                    custom:layout_constraintTop_toTopOf="parent"
+                    custom:srcCompat="@mipmap/recommendedbooks" />
+
+                <TextView
+                    android:id="@+id/ssc_textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="90dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="RECOMMENDED BOOKS FOR SSC"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.PopupMenu.Small"
+                    custom:layout_constraintBottom_toTopOf="@+id/ssc_recyclerView"
+                    custom:layout_constraintEnd_toEndOf="parent"
+                    custom:layout_constraintStart_toEndOf="@+id/ssc_image"
+                    custom:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/ssc_recyclerView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="55dp"
+                    custom:layout_constraintEnd_toEndOf="parent"
+                    custom:layout_constraintHorizontal_bias="0.0"
+                    custom:layout_constraintStart_toStartOf="parent"
+                    custom:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/ssc_textview1"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/background_tab"
+                    android:text="VIEW ALL"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textColor="@color/colorPrimary"
+                    custom:layout_constraintBottom_toTopOf="@+id/ssc_recyclerView"
+                    custom:layout_constraintEnd_toEndOf="parent"
+                    custom:layout_constraintHorizontal_bias="0.0"
+                    custom:layout_constraintRight_toRightOf="parent"
+                    custom:layout_constraintStart_toEndOf="@+id/ssc_textView2"
+                    custom:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/bank_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                custom:layout_constraintEnd_toEndOf="parent"
+                custom:layout_constraintHorizontal_bias="1.0"
+                custom:layout_constraintLeft_toLeftOf="parent"
+                custom:layout_constraintRight_toRightOf="parent"
+                custom:layout_constraintStart_toStartOf="parent"
+                custom:layout_constraintTop_toBottomOf="@+id/ssc_layout"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/bank_imageView"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    custom:layout_constraintBottom_toTopOf="@+id/bank_recyclerView"
+                    custom:layout_constraintStart_toStartOf="parent"
+                    custom:layout_constraintTop_toTopOf="parent"
+                    custom:srcCompat="@mipmap/recommendedbooks" />
+
+                <Button
+                    android:id="@+id/bank_textView1"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/background_tab"
+                    android:text="VIEW ALL"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textColor="@color/colorPrimary"
+                    custom:layout_constraintBottom_toTopOf="@+id/bank_recyclerView"
+                    custom:layout_constraintEnd_toEndOf="parent"
+                    custom:layout_constraintHorizontal_bias="1.0"
+                    custom:layout_constraintStart_toEndOf="@+id/bank_textView2"
+                    custom:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/bank_textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="90dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="RECOMMENDED BOOKS FOR BANK"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.PopupMenu.Small"
+                    custom:layout_constraintBottom_toTopOf="@+id/bank_recyclerView"
+                    custom:layout_constraintEnd_toEndOf="parent"
+                    custom:layout_constraintStart_toEndOf="@+id/bank_imageView"
+                    custom:layout_constraintTop_toTopOf="parent" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/bank_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="55dp"
+                    custom:layout_constraintLeft_toLeftOf="parent"
+                    custom:layout_constraintRight_toRightOf="parent"
+                    custom:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/armedforce_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                custom:layout_constraintLeft_toLeftOf="parent"
+                custom:layout_constraintRight_toRightOf="parent"
+                custom:layout_constraintTop_toBottomOf="@+id/bank_layout"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/armedforce_imageView"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    custom:layout_constraintBottom_toTopOf="@+id/armedforce_recyclerView"
+                    custom:layout_constraintStart_toStartOf="parent"
+                    custom:layout_constraintTop_toTopOf="parent"
+                    custom:srcCompat="@mipmap/recommendedbooks" />
+
+                <Button
+                    android:id="@+id/armedforce_textView1"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/background_tab"
+                    android:text="VIEW ALL"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textColor="@color/colorPrimary"
+                    custom:layout_constraintBottom_toTopOf="@+id/armedforce_recyclerView"
+                    custom:layout_constraintEnd_toEndOf="parent"
+                    custom:layout_constraintHorizontal_bias="1.0"
+                    custom:layout_constraintRight_toRightOf="parent"
+                    custom:layout_constraintStart_toEndOf="@+id/armedforce_textView2"
+                    custom:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/armedforce_textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="90dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="RECOMMENDED BOOKS FOR ARMED FORCES "
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Widget.PopupMenu.Small"
+                    custom:layout_constraintBottom_toTopOf="@+id/armedforce_recyclerView"
+                    custom:layout_constraintEnd_toEndOf="parent"
+                    custom:layout_constraintStart_toEndOf="@+id/armedforce_imageView"
+                    custom:layout_constraintTop_toTopOf="parent"
+                    custom:layout_constraintVertical_bias="0.39999998" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/armedforce_recyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="55dp"
+                    custom:layout_constraintLeft_toLeftOf="parent"
+                    custom:layout_constraintRight_toRightOf="parent"
+                    custom:layout_constraintTop_toTopOf="parent" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
+

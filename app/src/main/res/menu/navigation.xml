@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_icon_silhouette"
+        android:title="@string/title_home"
+        app:showAsAction="collapseActionView"/>
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_turn_notifications_on_button"
+        android:title="@string/title_notifications"
+        app:showAsAction="collapseActionView"/>
+
+    <item
+        android:id="@+id/navigation_library"
+        android:icon="@drawable/ic_open_book"
+        android:title="@string/title_library"
+        app:showAsAction="collapseActionView"/>
+
+    <item
+        android:id="@+id/navigation_offline_download"
+        android:icon="@drawable/ic_download_to_storage_drive"
+        android:title="@string/title_offline_download"
+        app:showAsAction="collapseActionView"/>
+</menu>

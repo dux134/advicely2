@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "23593369072",
+    "firebase_url": "https://advicely2.firebaseio.com",
+    "project_id": "advicely2",
+    "storage_bucket": "advicely2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23593369072:android:d84164f57ba87990",
+        "android_client_info": {
+          "package_name": "com.example.root.advicely"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "23593369072-lsjm33e0p8hffs6pm4lcp6k0rmc1j3ek.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.root.advicely",
+            "certificate_hash": "787617a308b2f12e6b999a81cac421ac0da8bf61"
+          }
+        },
+        {
+          "client_id": "23593369072-eupfavumua9j1h0ec81snm9u56nkas16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx0LgbdY4GT-HQYYTHD-j6NhB8FSrDYTs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "23593369072-eupfavumua9j1h0ec81snm9u56nkas16.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
